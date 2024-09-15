@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div id="balloon"></div>
+    <div id="form">
+        <input type="text" name="" id="taskName">
+        <button id="createButton">作成</button>
+    </div>
+    <hr>
+    <table class="box">
+        <tr>
+            <th>todo</th>
+            <th>doing</th>
+            <th>done</th>
+        </tr>
+        <tr>
+            <td id="todo" name="todo" class="subbox"></td>
+            <td id="doing" name="doing" class="subbox"></td>
+            <td id="done" name="done" class="subbox"></td>
+        </tr>
+        <tr>
+            <td colspan="3" id="dustbox" class="dustbox">
+            <img src="dustbox.png" alt="ゴミ箱" class="icon">
+            </td>
+        </tr>   
+    </table>
+
+    <hr>
+    削除履歴
+    <table id="history" class="history"></table>
+    <script src="main.js"></script>
+</body>
+</html>
